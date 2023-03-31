@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "tridhaatu-47c41": {
+      "hosting": {
+        "tridhaatu-admin-panel": [
+          "tridhaatu-47c41"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "tridhaatu-47c41"
+  }
+}
