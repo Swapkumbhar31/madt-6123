@@ -12,6 +12,7 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
 import {MatButtonModule} from "@angular/material/button";
+import {ReactiveFormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -19,17 +20,18 @@ import {MatButtonModule} from "@angular/material/button";
     LayoutComponent,
     HomeComponent
   ],
-  imports: [
-    CommonModule,
-    DashboardRoutingModule,
-    MatSidenavModule,
-    FlexLayoutModule,
-    ComponentsModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatButtonModule
-  ]
+    imports: [
+        CommonModule,
+        DashboardRoutingModule,
+        MatSidenavModule,
+        FlexLayoutModule,
+        ComponentsModule,
+        MatToolbarModule,
+        MatIconModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatButtonModule,
+        ReactiveFormsModule
+    ]
 })
 export class DashboardModule { }

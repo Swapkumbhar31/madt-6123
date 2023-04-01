@@ -1,6 +1,6 @@
-<mat-form-field appearance="outline" class="w-full">
-  <mat-label>Input</mat-label>
-  <input matInput>
+<mat-form-field appearance="outline"  class="w-full">
+  <mat-label>Search movie</mat-label>
+  <input matInput [formControl]="searchControl">
   <mat-icon matSuffix>search</mat-icon>
 </mat-form-field>
 <!--<button mat-flat-button (click)="addMovies()">Add</button>-->

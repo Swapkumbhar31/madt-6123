@@ -41,10 +41,16 @@ $tridhaatu-admin-panel-theme: mat.define-light-theme((
 
 .movie {
   overflow: hidden;
+  background-color: black;
+  img {
+    margin: auto;
+    transform: translateY(-50%);
+    top: 50%;
+  }
   &:hover {
     img {
       transition: 0.3s transform linear;
-      transform: scale(1.2);
+      transform: scale(1.2)  translateY(-50%);
     }
     .plot {
       display: block;

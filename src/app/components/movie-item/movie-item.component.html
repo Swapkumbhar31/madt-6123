@@ -2,7 +2,7 @@
 
 <ng-container *ngIf="movie">
   <div class="cursor-pointer movie relative h-96 ">
-    <img [src]="movie.posterUrl" (error)="notFoundError($event)" class="h-full absolute z-0">
+    <img [src]="movie.posterUrl" (error)="notFoundError($event)" class="w-full text-center absolute z-0">
     <div class="title-bar z-10 absolute bottom-0 w-full px-3 py-6" fxLayout="column">
       <span fxFlex></span>
       <span class="font-semibold text-2xl">{{movie.title}}</span>
