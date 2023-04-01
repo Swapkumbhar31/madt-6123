@@ -1,8 +1,6 @@
-<mat-sidenav-container class="h-screen">
-  <mat-sidenav opened="true" mode="side" fxFlex="250px" position="start">
-    <app-sidebar></app-sidebar>
-  </mat-sidenav>
-  <mat-sidenav-content>
-    <router-outlet></router-outlet>
-  </mat-sidenav-content>
-</mat-sidenav-container>
+<mat-toolbar color="primary">
+  <span>Netflix</span>
+</mat-toolbar>
+<div class="container mx-auto py-10">
+<router-outlet></router-outlet>
+</div>

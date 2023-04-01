@@ -1,0 +1,11 @@
+<mat-form-field appearance="outline" class="w-full">
+  <mat-label>Input</mat-label>
+  <input matInput>
+  <mat-icon matSuffix>search</mat-icon>
+</mat-form-field>
+<!--<button mat-flat-button (click)="addMovies()">Add</button>-->
+<div gdColumns="1fr 1fr 1fr 1fr" gdGap="20px">
+  <ng-container *ngFor="let movie of movies">
+    <app-movie-item [movie]="movie.data()"></app-movie-item>
+  </ng-container>
+</div>

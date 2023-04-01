@@ -1,0 +1,13 @@
+
+
+<ng-container *ngIf="movie">
+  <div class="cursor-pointer movie relative h-96 ">
+    <img [src]="movie.posterUrl" (error)="notFoundError($event)" class="h-full absolute z-0">
+    <div class="title-bar z-10 absolute bottom-0 w-full px-3 py-6" fxLayout="column">
+      <span fxFlex></span>
+      <span class="font-semibold text-2xl">{{movie.title}}</span>
+      <span class="font-semibold text-xs">{{movie.year}}</span>
+      <span class="font-semibold text-xs hidden plot">{{movie.plot}}</span>
+    </div>
+  </div>
+</ng-container>
